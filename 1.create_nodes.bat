@@ -20,11 +20,10 @@ mkdir "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Ass
 mkdir "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg2
 REM #	
 REM # 1.2. Start the config server instances 
-REM #	
-cd "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"
-start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg0 --port 26050"
-start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg1 --port 26051"
-start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg2 --port 26052"
+REM #
+start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg0" --port 26050
+start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg1" --port 26051
+start /b "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongod.exe --configsvr --dbpath" "C:"\"Users"\"Conor"\"Documents"\"College"\"NoSQL Data Architectures"\"Assignment 2"\"Setup Scripts"\"cfg2" --port 26052
 REM #	
 REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 
