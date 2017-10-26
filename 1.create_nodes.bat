@@ -5,7 +5,7 @@ REM # 0. Set myName to the name of the computer       #
 REM #						      #
 REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #	
-SET myName=COM-IT22-51246.student-cit
+SET myName=COM-SDH4.R00121583
 REM #
 REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #						      #
