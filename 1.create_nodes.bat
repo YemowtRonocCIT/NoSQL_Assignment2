@@ -55,31 +55,31 @@ REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #	
 REM # 3.1. Create the data directory for each of the replica sets servers
 REM #	
-mkdir %cluster_directory%\"dublin0"
-mkdir %cluster_directory%\"dublin1"
-mkdir %cluster_directory%\"dublin2"
-mkdir %cluster_directory%\"cork0"
-mkdir %cluster_directory%\"cork1"
-mkdir %cluster_directory%\"cork2"
-mkdir %cluster_directory%\"limerick0"
-mkdir %cluster_directory%\"limerick1"
-mkdir %cluster_directory%\"limerick2"
-mkdir %cluster_directory%\"galway0"
-mkdir %cluster_directory%\"galway1"
-mkdir %cluster_directory%\"galway2"
+mkdir %cluster_directory%\dublin0
+mkdir %cluster_directory%\dublin1
+mkdir %cluster_directory%\dublin2
+mkdir %cluster_directory%\cork0
+mkdir %cluster_directory%\cork1
+mkdir %cluster_directory%\cork2
+mkdir %cluster_directory%\limerick0
+mkdir %cluster_directory%\limerick1
+mkdir %cluster_directory%\limerick2
+mkdir %cluster_directory%\galway0
+mkdir %cluster_directory%\galway1
+mkdir %cluster_directory%\galway2
 REM #	
 REM # 3.2. Start each member of the replica set 
 REM #	
-start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\"dublin0" --port 27000
-start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\"dublin1" --port 27001
-start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\"dublin2" --port 27002
-start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\"cork0" --port 27100
-start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\"cork1" --port 27101
-start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\"cork2" --port 27102
-start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\"limerick0" --port 27200
-start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\"limerick1" --port 27201
-start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\"limerick2" --port 27202
-start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\"galway0" --port 27300
-start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\"galway1" --port 27301
-start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\"galway2" --port 27302
+start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\dublin0 --port 27000
+start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\dublin1 --port 27001
+start /b %mongod_exe% --replSet dublin --dbpath %cluster_directory%\dublin2 --port 27002
+start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\cork0 --port 27100
+start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\cork1 --port 27101
+start /b %mongod_exe% --replSet cork --dbpath %cluster_directory%\cork2 --port 27102
+start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\limerick0 --port 27200
+start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\limerick1 --port 27201
+start /b %mongod_exe% --replSet limerick --dbpath %cluster_directory%\limerick2 --port 27202
+start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\galway0 --port 27300
+start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\galway1 --port 27301
+start /b %mongod_exe% --replSet galway --dbpath %cluster_directory%\galway2 --port 27302
 REM #	
