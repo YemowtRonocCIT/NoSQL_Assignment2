@@ -39,13 +39,11 @@ REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #	
 REM # 2.1. A first "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongos process listens to the default port 27017
 REM #	
-start /b mongos_exe --configdb %myName%.local:26050,%myName%.local:26051,%myName%.local:26052"
-
+start /b %mongos_exe% --configdb %myName%.local:26050,%myName%.local:26051,%myName%.local:26052
 REM #	
 REM # 2.2. Remaining "C:"\"Program Files"\"MongoDB"\"Server"\"3.0"\"bin"\"mongos processes listen to the explicit ports assigned by us
 REM #	
 start /b %mongos_exe% --configdb %myName%.local:26050,%myName%.local:26051,%myName%.local:26052 --port 26061
-
 start /b %mongos_exe% --configdb %myName%.local:26050,%myName%.local:26051,%myName%.local:26052 --port 26062
 start /b %mongos_exe% --configdb %myName%.local:26050,%myName%.local:26051,%myName%.local:26052 --port 26063
 REM #	
