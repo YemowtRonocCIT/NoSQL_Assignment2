@@ -27,7 +27,6 @@ REM #
 REM # 1.2. Start the config server instances 
 REM #
 start /b %mongod_exe% --configsvr --dbpath %cluster_directory%\cfg0 --port 26050
-pause
 start /b %mongod_exe% --configsvr --dbpath %cluster_directory%\cfg1 --port 26051
 start /b %mongod_exe% --configsvr --dbpath %cluster_directory%\cfg2 --port 26052
 REM #	
