@@ -4,8 +4,9 @@ REM #						        #
 REM # 6. Shard the collection			        #
 REM #						        #
 REM #---------------------------------------------------#
-REM #	
-C:\MongoDB_3_0\bin\mongo.exe --shell 4.shard_collection.js
+REM #
+SET mongo_exe=C:\"Program Files"\MongoDB\Server\3.0\bin\mongo.exe
+%mongo_exe% --shell 4.shard_collection.js
 REM #
 
 
