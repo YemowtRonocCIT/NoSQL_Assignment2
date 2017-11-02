@@ -7,10 +7,9 @@ REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #	
 SET desktop_name=DESKTOP-GIC9RBH
 SET user_name=Conor
-SET assignmentDirectory=C:\Users\%user_name%\Documents\College\NoSQL_Data_Architectures\Assignment_2
 SET mongod_exe=C:\"Program Files"\MongoDB\Server\3.0\bin\mongod.exe
 SET mongos_exe=C:\"Program Files"\MongoDB\Server\3.0\bin\mongos.exe
-SET cluster_directory=%assignmentDirectory%\Clusters
+SET cluster_directory=C:\Users\%user_name%\Documents\College\NoSQL_Data_Architectures\Assignment_2\Clusters
 REM #
 REM #"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"--"---#
 REM #						      #
